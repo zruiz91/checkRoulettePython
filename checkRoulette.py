@@ -8,7 +8,11 @@ names = names_string.split(", ")
 #Write your code below this line 👇
 
 
-chosen_person = names[random.randint(0, len(names))]
-print(random.randint(0, len(names)))
+num_of_people = len(names)
 
-print(f"{chosen_person} is going to buy the meal today!")
+random_choice = random.randint(0, num_of_people - 1)
+
+chosen_person = names[random_choice]
+
+
+print(chosen_person + " is going to buy the meal today!")
